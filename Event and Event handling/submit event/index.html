@@ -1,12 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form submit</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: darkgray;
+      }
+        .main {
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+         
+         
+          
+        }
+      
+      .register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin: 80px auto;
+        width: fit-content;
+      }
+      .heading {
+        margin-bottom: 10px;
+      }
+      form {
+        padding: 10px;
+      }
+      input {
+        margin: 5px;
+        padding: 6px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      #btn {
+        display: flex;
+        background-color: dodgerblue;
+        color: white;
+        width: 150px;
+        font-size: 16px;
+        padding: 10px 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 10px auto;
+        margin-top: 20px;
+      }
+      #btn:hover {
+        background-color: rgb(27, 127, 228);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      label {
+        display: inline-block;
+        width: 110px;
+      }
+      .card {
+        
+        width: 300px;
+        max-height: 300px;
+        margin: 10px;
+        display: inline-block;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+      }
+      .profile {
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 10px;
+      }
+      .profile img {
+        width: 100%;
+        height: 100%;
+      }
+      .card p {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="register">
+        <h2 class="heading">Register Form</h2>
+        <form action="">
+          <label for="profile"> Profile picture : </label>
+          <input
+            type="url"
+            id="profile"
+            placeholder="Enter profile url"
+          /><br />
+
+          <label for="name"> Name : </label>
+          <input type="text" id="name" placeholder="Enter your Name" /><br />
+
+          <label for="age">Age : </label>
+          <input type="number" id="age" placeholder="Age" /><br />
+
+          <label for="info"> info : </label>
+          <input type="text" id="info" placeholder="Enter your info" /><br />
+
+          <label for="contact">contact :</label>
+          <input type="tel" id="contact" placeholder="contact" /><br />
+
+          <input type="submit" id="btn" />
+        </form>
+      </div>
+      <!-- <div class="card">
+        <div class="profile">
+          <img
+            src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <h2>Saad</h2>
+        <p>23</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio aut
+          magni ut blanditiis est ex nisi odio voluptate tempora eius.
+        </p>
+        <p>0316163424</p>
+      </div> -->
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

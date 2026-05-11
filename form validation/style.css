@@ -66,3 +66,11 @@ button{
 button:hover{
   background: #1b7fe4;
 }
+#resultmessage{
+  display: flex;
+  color: green;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+}
